@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE facturas [
+<!ELEMENT facturas (factura+)>
+<!ELEMENT factura (numero, fecha, datos_emisor, datos_cliente, detalle_factura)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT datos_emisor (nombre, cif, telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT datos_cliente (nombre, cif, telefono)>
+<!ELEMENT detalle_factura (importe, linea+)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT linea (codigo, descripcion, cantidad, oferta?, pvp)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT oferta (#PCDATA)>
+<!ELEMENT pvp (#PCDATA)>
+]>
+<facturas>
+    <!--FACTURA 1-->
+    <factura>
+        <numero>1</numero>
+        <fecha>25-02-22</fecha>
+        <datos_emisor>
+            <nombre>Lucho</nombre>
+            <cif>001</cif>
+            <telefono>123</telefono>
+        </datos_emisor>
+        <datos_cliente>
+            <nombre>Luis</nombre>
+            <cif>002</cif>
+            <telefono>123</telefono>
+        </datos_cliente>
+        <detalle_factura>
+            <importe>10</importe>
+            <linea>
+                <codigo>1</codigo>
+                <descripcion>NA</descripcion>
+                <cantidad>1</cantidad>
+                <oferta>No</oferta>
+                <pvp>0</pvp>
+            </linea>
+        </detalle_factura>
+    </factura>
+    <!--FACTURA 2-->
+    <factura>
+        <numero>1</numero>
+        <fecha>25-02-22</fecha>
+        <datos_emisor>
+            <nombre>Lucho</nombre>
+            <cif>001</cif>
+            <telefono>123</telefono>
+        </datos_emisor>
+        <datos_cliente>
+            <nombre>Luis</nombre>
+            <cif>002</cif>
+            <telefono>123</telefono>
+        </datos_cliente>
+        <detalle_factura>
+            <importe>10</importe>
+            <linea>
+                <codigo>1</codigo>
+                <descripcion>NA</descripcion>
+                <cantidad>1</cantidad>
+                <oferta>No</oferta>
+                <pvp>0</pvp>
+            </linea>
+        </detalle_factura>
+    </factura>
+    <!--FACTURA 3-->
+    <factura>
+        <numero>1</numero>
+        <fecha>25-02-22</fecha>
+        <datos_emisor>
+            <nombre>Lucho</nombre>
+            <cif>001</cif>
+            <telefono>123</telefono>
+        </datos_emisor>
+        <datos_cliente>
+            <nombre>Luis</nombre>
+            <cif>002</cif>
+            <telefono>123</telefono>
+        </datos_cliente>
+        <detalle_factura>
+            <importe>10</importe>
+            <linea>
+                <codigo>1</codigo>
+                <descripcion>NA</descripcion>
+                <cantidad>1</cantidad>
+                <oferta>No</oferta>
+                <pvp>0</pvp>
+            </linea>
+        </detalle_factura>
+    </factura>
+</facturas>
