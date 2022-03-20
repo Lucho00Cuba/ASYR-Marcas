@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises [
+    <!ELEMENT paises (pais*)> 
+    <!ELEMENT pais 
+    (nombre,continente,capital,superficie,poblacion,ciudades,lenguas,religiones,moneda,gobierno)> 
+    <!ATTLIST pais id ID #REQUIRED> 
+    <!ELEMENT nombre (#PCDATA)> 
+    <!ELEMENT continente (#PCDATA)> 
+    <!ELEMENT capital (#PCDATA)> 
+    <!ELEMENT superficie (#PCDATA)> 
+    <!ELEMENT poblacion (#PCDATA)> 
+    <!ELEMENT ciudades (ciudad+)> 
+    <!ELEMENT ciudad (#PCDATA)> 
+    <!ELEMENT lenguas (lengua+)> 
+    <!ELEMENT lengua (#PCDATA)> 
+    <!ELEMENT religiones (religion+)> 
+    <!ELEMENT religion (#PCDATA)> 
+    <!ELEMENT moneda (#PCDATA)> 
+    <!ELEMENT gobierno (#PCDATA)>
+]>
+
+<paises>
+    <pais id="p1">
+        <nombre>EEUU</nombre>
+        <continente>America</continente>
+        <capital>Washington</capital>
+        <superficie>1000</superficie>
+        <poblacion>1000</poblacion>
+        <ciudades>
+            <ciudad>New York</ciudad>
+            <ciudad>Houston</ciudad>
+            <ciudad>Tampa</ciudad>
+            <ciudad>Chicago</ciudad>
+            <ciudad>Boston</ciudad>
+        </ciudades>
+        <lenguas>
+            <lengua>Ingles</lengua>
+            <lengua>Español</lengua>
+        </lenguas>
+        <religiones>
+            <religion>Baptistas</religion>
+            <religion>Metodistas</religion>
+        </religiones>
+        <moneda>dolar</moneda>
+        <gobierno>capitalista</gobierno>
+    </pais>
+</paises>

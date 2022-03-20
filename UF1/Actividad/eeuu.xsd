@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- ALL -->
+<xs:element name="nombre" type="xs:string"/>
+<xs:element name="poblacion" type="xs:string"/>
+<xs:element name="continente" type="xs:string"/>
+<xs:element name="capital" type="xs:string"/>
+<xs:element name="latitud" type="xs:decimal"/>
+<xs:element name="longitud" type="xs:decimal"/>
+<xs:element name="descripcion" type="xs:string"/>
+<xs:element name="url" type="xs:string"/>
+<xs:element name="costa" type="xs:boolean"/>
+
+<!-- Complex -->
+<xs:element name="coordenadas">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="latitud"/>
+            <xs:element ref="longitud"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="imagenes">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="nombre"/>
+            <xs:element ref="descripcion"/>
+            <xs:element ref="url"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<!-- MAIN -->
+<xs:element name="pais">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="nombre"/>
+            <xs:element ref="poblacion"/>
+            <xs:element ref="continente"/>
+            <xs:element ref="capital"/>
+            <xs:element ref="coordenadas"/>
+            <xs:element ref="imagenes"/>
+            <xs:element ref="costa"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pais [
+    <!ELEMENT pais (nombre, poblacion, continente, capital, coordenadas+, imagenes+, costa)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT poblacion (#PCDATA)>
+    <!ELEMENT continente (#PCDATA)>
+    <!ELEMENT capital (#PCDATA)>
+    <!ELEMENT coordenadas (latitud, longitud)>
+    <!ELEMENT latitud (#PCDATA)>
+    <!ELEMENT longitud (#PCDATA)>
+    <!ELEMENT imagenes (nombre, descripcion, url)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+    <!ELEMENT costa (#PCDATA)>
+]>
+<pais xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./eeuu.xsd">
+    <nombre>EEUU</nombre>
+    <poblacion>10</poblacion>
+    <continente>America</continente>
+    <capital>Washington</capital>
+    <coordenadas>
+        <latitud>37.09024</latitud>
+        <longitud>-95.712891</longitud>
+    </coordenadas>
+    <imagenes>
+        <nombre>Hell's Kitchen</nombre>
+        <descripcion>Barrio de los teatros y es hogar de actores</descripcion>
+        <url>https://es.wikipedia.org/wiki/Hell%27s_Kitchen_(Manhattan)</url>
+    </imagenes>
+    <costa>true</costa>
+</pais>
