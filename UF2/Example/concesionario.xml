@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./concesionario.xsl"?>
+<concesionario id="00001">
+    <nombre>Autos SL</nombre>
+    <cif>464646K</cif>
+    <coches>
+        <coche>
+            <marca>Seat</marca>
+            <modelo>Leon</modelo>
+            <precio>20000</precio>
+        </coche>
+        <coche>
+            <marca>Seat</marca>
+            <modelo>Cordoba</modelo>
+            <precio>22000</precio>
+        </coche>
+        <coche>
+            <marca>Renault</marca>
+            <modelo>Kdjar</modelo>
+            <precio>24000</precio>
+        </coche>
+    </coches>
+</concesionario>
+
+<!-- java -jar .\resources\saxon-ee-11.3.jar -xsl:.\UF2\concesionario.xsl -s:.\UF2\concesionario.xml -o:.\UF2\out.xml -->

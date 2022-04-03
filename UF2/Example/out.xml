@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+Nombre: Autos SL
+ID: 00001
+CIF: 464646K
+COCHES: 3
+MARCA: Seat
+MODELO: Leon
+PRECIO: 20000 $
+
+MARCA: Seat
+MODELO: Cordoba
+PRECIO: 22000 $
+
+MARCA: Renault
+MODELO: Kdjar
+PRECIO: 24000 $

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./eeuu.xsl"?>
+<!DOCTYPE pais [
+    <!ELEMENT pais (nombre, poblacion, continente, capital, coordenadas+, imagenes, costa)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT poblacion (#PCDATA)>
+    <!ELEMENT continente (#PCDATA)>
+    <!ELEMENT capital (#PCDATA)>
+    <!ELEMENT coordenadas (latitud, longitud)>
+    <!ELEMENT latitud (#PCDATA)>
+    <!ELEMENT longitud (#PCDATA)>
+    <!ELEMENT imagenes (imagen+)>
+    <!ELEMENT imagen (nombre, descripcion, url)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+    <!ELEMENT costa (#PCDATA)>
+]>
+<pais>
+    <nombre>EEUU</nombre>
+    <poblacion>10</poblacion>
+    <continente>America</continente>
+    <capital>Washington</capital>
+    <coordenadas>
+        <latitud>37.09024</latitud>
+        <longitud>-95.712891</longitud>
+    </coordenadas>
+    <imagenes>
+        <imagen>
+            <nombre>Hell's Kitchen</nombre>
+            <descripcion>Barrio de los teatros y es hogar de actores</descripcion>
+            <url>https://es.wikipedia.org/wiki/Hell%27s_Kitchen_(Manhattan)</url>
+        </imagen>
+        <imagen>
+            <nombre>Hell'sKitchen</nombre>
+            <descripcion>Barrio de los teatros y es hogar de actores</descripcion>
+            <url>https://es.wikipedia.org/wiki/Hell%27s_Kitchen_(Manhattan)</url>
+        </imagen>
+        <imagen>
+            <nombre>Hell'sKitchen</nombre>
+            <descripcion>Barrio de los teatros y es hogar de actores</descripcion>
+            <url>https://es.wikipedia.org/wiki/Hell%27s_Kitchen_(Manhattan)</url>
+        </imagen>
+        <imagen>
+            <nombre>Hell's Kitchen Sin URL</nombre>
+            <descripcion>Barrio de los teatros y es hogar de actores</descripcion>
+            <url></url>
+        </imagen>
+    </imagenes>
+    <costa>true</costa>
+</pais>
+
+<!-- java -jar .\resources\saxon-ee-11.3.jar -xsl:.\UF2\Actividad\eeuu.xsl -s:.\UF2\Actividad\eeuu.xml -o:.\UF2\Actividad\eeuu.html -->

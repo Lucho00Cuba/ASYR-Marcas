@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE rss [
+    <!ELEMENT rss (channel)>
+    <!ATTLIST rss version CDATA #REQUIRED>
+    <!ELEMENT channel (title, link, description, ttl, item+)>
+    <!ELEMENT item (title, link, description)>
+    <!ELEMENT ttl (#PCDATA)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT link (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+]>
+<rss version="2.0">
+    <channel>
+        <title>WhiteHouse</title>
+        <link>https://www.whitehouse.gov</link>
+        <description>Website WhiteHouse </description>
+        <ttl>60</ttl>
+        <item>
+            <title>Declaraciones del presidente Biden</title>
+            <link>https://www.whitehouse.gov/es/prensa/declaraciones-comunicados/2021/12/10/declaraciones-del-presidente-biden-en-la-sesion-inaugural-de-la-cumbre-por-la-democracia/</link>
+            <description>Declaraciones del presidente Biden en la sesión inaugural de la Cumbre por la Democracia </description>
+        </item>
+        <item>
+            <title>Declaraciones del presidente Biden</title>
+            <link>https://www.whitehouse.gov/es/prensa/discursos-presidenciales/2021/08/16/declaraciones-del-presidente-biden-sobre-afganistan/</link>
+            <description>Declaraciones del presidente Biden sobre Afganistán</description>
+        </item>
+        <item>
+            <title>Ficha informativa</title>
+            <link>https://www.whitehouse.gov/es/prensa/declaraciones-comunicados/2021/07/22/ficha-informativa-medidas-de-la-administracion-biden-harris-sobre-cuba/</link>
+            <description>Medidas de la Administración Biden-⁠Harris sobre Cuba</description>
+        </item>
+        <item>
+            <title>Resumen de la Primera Reunión</title>
+            <link>https://www.whitehouse.gov/es/prensa/declaraciones-comunicados/2021/07/20/resumen-de-la-primera-reunion-del-grupo-de-trabajo-de-la-casa-blanca-sobre-puerto-rico/</link>
+            <description>Resumen de la Primera Reunión del Grupo de Trabajo de la Casa Blanca sobre Puerto Rico </description>
+        </item>
+    </channel>
+</rss> 
