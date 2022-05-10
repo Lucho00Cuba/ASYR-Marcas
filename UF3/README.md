@@ -71,3 +71,4 @@ root@dolibarr:~# systemctl restart apache2
 
 > After completing the steps, go to http://dolibarr.home.lab
 
+>> **To reproduce this lab you need a DNS server**
